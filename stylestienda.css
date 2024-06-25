@@ -48,26 +48,14 @@ h2 {
     font-size: 15px;
 }
 
+.fotos {
+    margin-bottom: 50px;
+    margin-top: -620px;
+    margin-left: 100px;
+}
+
 .banner {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-    font-size: 15px;
-    margin: 50px auto;
-    background-color: #cc9af3;
-    padding: 20px;
     text-align: center;
-}
-
-.section-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 200px;
-    margin-left: 25px;
-}
-
-.text-content, .image-content {
-    width: 50%;
 }
 
 .info {
@@ -93,3 +81,33 @@ footer {
     bottom: 0;
 }
 
+.horario {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 1250px;
+}
+
+#inicio {
+    margin-top: 200px;
+}
+
+#schedule {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin-left: 1375px;
+}
+
+#schedule li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#schedule li.today {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    font-weight: bold;
+}

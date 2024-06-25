@@ -48,26 +48,11 @@ h2 {
     font-size: 15px;
 }
 
-.banner {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-    font-size: 15px;
-    margin: 50px auto;
-    background-color: #cc9af3;
-    padding: 20px;
-    text-align: center;
-}
-
-.section-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 200px;
-    margin-left: 25px;
-}
-
-.text-content, .image-content {
-    width: 50%;
+.fotos {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 175px;
+    display: inline-block;
 }
 
 .info {
@@ -92,4 +77,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-

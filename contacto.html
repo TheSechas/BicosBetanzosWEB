@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bicos Betanzos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylescontacto.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1><a href="index.html"><img src="logo-removebg-preview.png" alt="Bicos Betanzos Logo"></a></h1>
+            <h1><a href="index.html"><img src="logo-removebg-preview.png" alt="Bicos Betanzos Logo" class="zoom"></a></h1>
         </div>
         <nav>
             <ul>
@@ -23,7 +23,19 @@
     </header>
     <main>
         <section id="inicio">
-            <div class="banner"></div>
+            <div class="contact-form">
+                <h2>Contacto</h2>
+                <form action="enviar.php" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        <div class="info">
             <div class="siguenos">
                 <h2>SIGUENOS</h2>
                 <h3><a href="https://www.instagram.com/bicos_betanzos/">Instagram</a></h3>
@@ -37,6 +49,8 @@
                 <h2>TELEFONO</h2>
                 <h3>Tienda: 981 77 08 90</h3>
                 <h3>Personal: 600 43 04 48</h3>
+            </div>
+        </div>
         </section>
     </main>
     <footer>
@@ -44,3 +58,4 @@
     </footer>
 </body>
 </html>
+
