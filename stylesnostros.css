@@ -1,0 +1,78 @@
+body {
+    font-family: "arial black";
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* Fondo blanco más oscuro */
+    color: #333;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #37015f;
+    text-decoration: none;
+}
+
+.fotos {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center
+}
+
+.siguenos {
+    font-family: "arial medium", serif;
+    margin-bottom: -175px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.ubicacion {
+    font-family: "arial medium", serif;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.telefono {
+    font-family: "arial medium", serif;
+    margin-bottom: 100px;
+    margin-top: -200px;
+    margin-left: 1600px;
+}
+
+.banner {
+    color: #37015f;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: white;
+    color: #37015f;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
