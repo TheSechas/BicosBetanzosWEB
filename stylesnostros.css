@@ -49,13 +49,16 @@ h2 {
 }
 
 .banner {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "arial black", serif;
     color: black;
     font-size: 15px;
     margin: 50px auto;
     background-color: #cc9af3;
     padding: 20px;
-    text-align: center;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
 }
 
 .section-content {
@@ -63,11 +66,22 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin: 30px 200px;
-    margin-left: 25px;
+    margin-left: 100px;
+    margin-right: 500px;
 }
 
 .text-content, .image-content {
     width: 50%;
+}
+
+.image-content {
+    margin-left: 100px;
+}
+
+.text-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
 }
 
 .info {
