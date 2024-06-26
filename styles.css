@@ -38,7 +38,13 @@ nav ul li {
 nav ul li a {
     color: #37015f;
     text-decoration: none;
+    transition: font-size 0.3s ease; /* Añade una transición para el cambio de tamaño */
 }
+
+nav ul li a:hover {
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente cuando el ratón está sobre el enlace */
+}
+
 
 h1 {
     font-size: 20px;
@@ -76,9 +82,32 @@ h2 {
 
 .siguenos, .ubicacion, .telefono {
     font-family: "Arial", serif;
-    font-size: 10px;
+    font-size: 12px;
     margin: 50px;
     margin-top: 30px;
+}
+
+.logos {
+    margin-top: 10px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.logos a img {
+    margin: 0 5px; /* Espacio entre los logos */
+}
+
+.logos a img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el ratón */
+}
+
+hr {
+    border: 1;
+    height: 1px;
+    background: #37015f; /* Color de la línea divisora */
+    margin: 20px 0; /* Espacio alrededor de la línea divisora */
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 footer {
