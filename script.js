@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const days = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
-    const today = new Date().getDay();
+    const today = new Date().getDay()-1;
     const scheduleItems = document.querySelectorAll('#schedule li');
 
     scheduleItems.forEach((item, index) => {
@@ -10,3 +10,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
