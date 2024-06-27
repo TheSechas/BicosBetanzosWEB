@@ -173,3 +173,102 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .fotos-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .slide {
+        height: 300px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .logos {
+        margin-top: 5px;
+    }
+
+    hr {
+        margin: 10px 20px;
+    }
+}
+
+/* Definir keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animaciones */
+.foto-item img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animaciones en los elementos del menú desplegable */
+.dropdown-content a {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animaciones en los elementos al cargarse */
+.info {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Transición en el logo */
+header .logo img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header .logo img.zoom:hover {
+    transform: scale(1.1);
+    opacity: 0.8; /* Añade un efecto de opacidad al pasar el ratón */
+}
+
+/* Transición en los logos del footer */
+.logos a img {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.logos a img:hover {
+    transform: scale(1.1);
+}

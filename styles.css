@@ -71,36 +71,58 @@ nav ul li a:hover {
     display: block;
 }
 
-h1 {
-    font-size: 20px;
+.section {
+    text-align: center;
+    margin: 20px 0;
 }
 
 h2 {
-    font-size: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
-.fotos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+.items-container {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    margin: 20px;
+    flex-wrap: wrap;
 }
 
-.foto-item img {
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
 }
 
-.foto-item:nth-child(4) {
-    grid-column: span 3; /* Hace que la cuarta imagen ocupe toda la fila */
+.info {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
 }
 
 .info {
     background-color: rgb(202, 176, 218);
     display: flex;
+    padding: 10px;
+    border-radius: 5px;
     justify-content: space-around;
     margin: 20px;
 }
@@ -126,6 +148,68 @@ h2 {
     transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el ratón */
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #37015f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #5e3a8d;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category {
+    display: none;
+}
+
+.category.active {
+    display: flex;
+}
+
 hr {
     border: 1;
     height: 1px;
@@ -142,4 +226,103 @@ footer {
     padding: 10px 0;
     width: 100%;
     bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .fotos-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .slide {
+        height: 300px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .logos {
+        margin-top: 5px;
+    }
+
+    hr {
+        margin: 10px 20px;
+    }
+}
+
+/* Definir keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animaciones */
+.item img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animaciones en los elementos del menú desplegable */
+.dropdown-content a {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animaciones en los elementos al cargarse */
+.info {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Transición en el logo */
+header .logo img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header .logo img.zoom:hover {
+    transform: scale(1.1);
+    opacity: 0.8; /* Añade un efecto de opacidad al pasar el ratón */
+}
+
+/* Transición en los logos del footer */
+.logos a img {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.logos a img:hover {
+    transform: scale(1.1);
 }
