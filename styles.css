@@ -71,9 +71,19 @@ nav ul li a:hover {
     display: block;
 }
 
+hr.espacio {
+    border: 1;
+    height: 3px;
+    background: #37015f; /* Color de la línea divisora */
+    margin: 0px auto; /* Espacio alrededor de la línea divisora */
+    width: 80%; /* Ajusta el ancho de la línea divisora */
+}
+
 .section {
     text-align: center;
-    margin: 20px 0;
+    margin: -25px 0; /* Ajusta el margen para separación vertical */
+    padding: 20px 0; /* Ajusta el padding para separar el contenido */
+    background-color: #eaeaea; /* Fondo gris claro para secciones */
 }
 
 h2 {
@@ -82,11 +92,31 @@ h2 {
     color: #333;
 }
 
+h7 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 35px;
+    background-color: #c8a3f8;
+    padding: 10px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #37015f;
+    margin: 20px 0; /* Agrega margen superior e inferior */
+    display: inline-block; /* Asegura que el elemento no ocupe el ancho completo */
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
 .items-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 20px; /* Añade margen superior */
 }
 
 .item {
