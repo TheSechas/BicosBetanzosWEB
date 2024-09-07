@@ -81,8 +81,8 @@ hr.espacio {
 
 .section {
     text-align: center;
-    margin: -25px 0; /* Ajusta el margen para separación vertical */
-    padding: 20px 0; /* Ajusta el padding para separar el contenido */
+    /* margin: -25px 0; Ajusta el margen para separación vertical */
+    padding: 20px 0; /*Ajusta el padding para separar el contenido */
     background-color: #eaeaea; /* Fondo gris claro para secciones */
 }
 
@@ -106,10 +106,7 @@ h7 {
     display: inline-block; /* Asegura que el elemento no ocupe el ancho completo */
 }
 
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-}
+
 
 .items-container {
     display: flex;
